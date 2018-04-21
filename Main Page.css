@@ -40,10 +40,22 @@ body{
 	padding-top: 10px;
 	padding-bottom:7px;
 }
+
 /*----------------------*/
 /*--------header--------*/
 .header{
 	background-color: white;
+}
+.head-cont{
+	padding-top: 11px;
+	padding-bottom:18px;
+	padding-right:10px;
+	padding-left:10px;
+	font-size: 14px;
+}
+.head-item{
+	padding-top:12px;
+	padding-bottom:25px;
 }
 .navbar{
 	padding:0;
@@ -54,34 +66,43 @@ body{
 .nav-item{
 	border-bottom:3px solid white;
 	padding-bottom: 4px;
+	padding-top: 4px;
 }
 .nav-item:hover{
 	border-bottom: 3px solid #FF874F;
 }
-.head-cont{
-	padding-left:9px ;
-	padding-right: 17px;
-	padding-top: 33px;
-	padding-bottom:54px ;
-	font-size: 14px;
+.navbar-toggler{
+	margin:15px;
 }
 
 /*----------------------*/
-/*------short-info------*/
+/*---------Main---------*/
 .main{
-	height:649px;
 	border-top: 2px solid #FF874F;
 }
-.short-info{
-	padding-top:54px;
-	height:579px;
+.vid-container{
+	/* height:579px; */
+	 position:relative;
+	 display:inline-block;
 }
-.info-text{
-	padding-top: 91px;
-	padding-bottom: 113px;
-	background-size: 100%;
-	height: 303px;
-	z-index: 1;
+.vid{
+	position: absolute;
+    top: 0; left:0;
+    width: 100%;
+		height: 100%;
+    z-index: -1;
+		overflow: hidden;
+}
+#video{
+	position:relative;
+	right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.main-text{
+	padding-top: 141px;
+	padding-bottom: 298px;
 }
 .main-name{
 	color:white;
@@ -93,51 +114,37 @@ body{
 .main-details{
 	color:white;
 	font-family: 'Montserrat-Regular';
-	font-size: 24px;
+	font-size: 23px;
 	padding-top: 15px;
 }
-
-.card-blocks{
-	padding-top: 45px;
+.main-cards{
+	margin-top: -163px;
 }
 .costil{
 	padding:10px;
 }
 .info-card{
 	padding:7px;
+	padding-top: 18px;
 	background-color: white;
 	border-radius: 4px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-#video{
-	position:relative;
-	right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-.vid{
-	position: absolute;
-	top: 0; left:0;
-	width: 100%; height: 100%;
-	z-index: -1;
-	overflow: hidden;
-}
-.vidContain {
-    position:relative;
 }
 
 /*----------------------*/
 /*--------clients-------*/
 .clients{
-	padding-top: 77px;
+	padding-top: 61px;
 	font-size: 23px;
 }
 #clients-picts-1{
-	margin-top: 53px;
+	margin-top: 27px;
 }
 #clients-picts-2{
-		margin-top: 73px;
+		margin-top: 47px;
+}
+.clients-pict{
+	padding-top:26px;
 }
 #clients-btn{
 	margin-top:87px;
@@ -155,23 +162,35 @@ body{
 .services-text{
 	font-size:24px;
 }
+.services-content{
+	margin-top:21px;
+	margin-bottom: 21px;
+}
 .design, .polygraphy, .constructions{
 	margin-top:47px;
-	padding:43px;
-	padding-left:67px;
+	padding:22px;
+	padding-left:53px;
+	padding-right: 53px;
 	border-radius: 4px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .design-list{
-	padding-left: 75px;
+	padding-left: 30px;
+}
+.design-img{
+	padding-right:30px;
 }
 
 /*----------------------*/
 /*--------footer--------*/
 footer{
 	background-color: #383745;
-	padding-top:28px;
-	padding-bottom: 28px;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+.footer-column{
+	padding-top:8px;
+	padding-bottom: 8px;
 }
 .footer-color{
 	color:white;
