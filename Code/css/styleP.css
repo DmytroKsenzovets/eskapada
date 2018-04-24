@@ -8,15 +8,13 @@ body{
 	background-color: #123; 
 }
 .header{
-	//border: 1px solid #f00;
 	display: flex;
 	height: 250px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-image: url(img/poligrafia_main.jpg);
+	background-image: url('img/poli.jpg');
 	background-size: 100%;
-//	 filter: blur(1px);
 
 }
 
@@ -59,21 +57,6 @@ body{
 .list{
 	margin: 25px 0;
 }
-
-/*
-#layout{
-	margin: 0 auto;
-	text-align: center;
-}
-
-#layout img{
-	height: 240px;
-}
-
-#layout{
-	transition: 0.1s 
-}*/
-
 
 .variant img{
 	height: 240px;
