@@ -8,10 +8,7 @@
 }
 *{
 	font-family: "Montserrat-Regular";
-	color:black;
-}
-body{
-	background-color: #F2F2F7;
+	/* background-color: black; */
 }
 .container-fluid{
 	padding-left: 0;
@@ -20,11 +17,16 @@ body{
 .button{
 	width:165px;
 	height:40px;
-	background-color:#FF874F;
+	border-radius: 20px;
+	border:2px solid rgba(193, 50, 50, 0.55);
+	background:linear-gradient(to right, #FF7B1C , #FF3465);
 	color:white;
 }
 .button:hover{
-	background-color: #ff5100;
+	background:linear-gradient(to right, #f26704 , #f6003b);
+}
+.button:active{
+	background:#f6003b;
 }
 .container{
 	padding-left: 0;
@@ -32,11 +34,12 @@ body{
 }
 .list{
 	padding-left:0;
+	list-style-image: url("img/list-marker.png");
 }
-
 .list li{
-	padding-top: 10px;
-	padding-bottom:7px;
+	padding-top: 11px;
+	padding-bottom:4px;
+	padding-left:20px;
 }
 
 /*----------------------*/
@@ -83,25 +86,9 @@ body{
 /*---------Main---------*/
 .main{
 	border-top: 1px solid #FF874F;
-}
-.vid-container{
-	 position:relative;
-	 display:inline-block;
-}
-.vid{
-	position: absolute;
-    top: 0; left:0;
-    width: 100%;
-		height: 100%;
-    z-index: -1;
-		overflow: hidden;
-}
-#video{
-	position:relative;
-	right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  background: url("img/Main.png") no-repeat;
+	background-size: 100%;
+	/* height:100%; */
 }
 .main-text{
 	padding-top: 141px;
@@ -121,7 +108,7 @@ body{
 	padding-top: 15px;
 }
 .main-cards{
-	margin-top: -163px;
+	margin-top: -158px;
 }
 .costil{
 	padding:10px;
@@ -137,51 +124,103 @@ body{
 /*----------------------*/
 /*--------clients-------*/
 .clients{
-	padding-top: 61px;
+  background-image: url("img/clients_bg.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+  background-position: bottom;
+	padding-top: 53px;
 	font-size: 23px;
 }
 #clients-picts-1{
 	margin-top: 27px;
 }
 #clients-picts-2{
-		margin-top: 47px;
+		margin-top: 31px;
 }
 .clients-pict{
 	padding-top:26px;
 }
 #clients-btn{
-	margin-top:87px;
-	margin-bottom: 57px;
+	margin-top:72px;
+	margin-bottom: 146px;
 	height: 40px;
 	width: 196px;
 }
 
 /*----------------------*/
-/*-------services-------*/
-.services{
-	padding-top:58px;
-	padding-bottom: 75px;
-}
+/*-------Services-------*/
 .services-text{
 	font-size:24px;
 }
-.services-content{
-	margin-top:21px;
-	margin-bottom: 21px;
+.services-sphere{
+	font-size: 36px;
+	font-family: 'Montserrat-ExtraBold';
+	color:#D5D5E1;
+	padding-left: 21px;
 }
-.design, .polygraphy, .constructions{
-	margin-top:47px;
-	padding:22px;
-	padding-left:53px;
-	padding-right: 53px;
-	border-radius: 10px;
-	box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+
+/*----------------------*/
+/*--------Design--------*/
+.design{
+	margin-top: -2px;
+	padding-top: 3px;
+	padding-bottom: 69px;
+	background-color:#F2F2F7;
+}
+.design-content{
+	margin-top:35px;
+	margin-bottom: 7px;
 }
 .design-list{
-	padding-left: 30px;
+	padding-left: 18px;
 }
 .design-img{
-	padding-right:30px;
+	 padding-left: 82px;
+}
+
+/*----------------------*/
+/*------Polygraphy------*/
+.polygraphy{
+	padding-top: 39px;
+	padding-left: 56px;
+	padding-bottom: 9px;
+}
+.polygraphy-img{
+	padding-top: 19px;
+	padding-left:25px;
+	position:relative;
+}
+#fifth-pict{
+	position: absolute;
+	z-index: 999;
+	right:110px;
+	top:137px;
+}
+
+/*----------------------*/
+/*-----Constructions----*/
+.constructions{
+	background-color:#F2F2F7;
+	padding-top:48px;
+	padding-bottom: 50px;
+}
+.constructions-img{
+	padding-left: 61px;
+}
+.img-adaptive {
+	max-width: 100%;
+	height: auto;
+}
+.polygraphy-content{
+	padding-left:50px;
+}
+
+/*----------------------*/
+/*----------Map---------*/
+.map{
+	background-image: url("img/Map.png");
+	max-width: 100%;
+	height: 100%;
 }
 
 /*----------------------*/
@@ -190,8 +229,4 @@ footer{
 	background-color: #383745;
 	padding-top:20px;
 	padding-bottom: 20px;
-}
-.footer-column{
-	/* padding-top:8px;
-	padding-bottom: 8px; */
 }
