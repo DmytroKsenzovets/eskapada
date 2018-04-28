@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+		font-family: 'Montserrat-ExtraBold';
+		src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+		font-family: 'Ubuntu-Bold';
+		src: url(fonts/Ubuntu-Bold.ttf);
+}
+
+*{
+	font-family: "Montserrat-Regular";
+	color:black;
+}
+body{
+	background-color: #F2F2F7;
+}
+/* .container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+.button{
+	width:165px;
+	height:40px;
+	background-color:#FF874F;
+	color:white;
+}
+.button:hover{
+	background-color: #ff5100;
+}
+.container{
+	padding-left: 0;
+	padding-right: 0;
+}
+.list{
+	padding-left:0;
+}
+
+.list li{
+	padding-top: 10px;
+	padding-bottom:7px;
+} */
+
+/*----------------------*/
+/*--------header--------*/
+ /* .header{
+	background-color: white;
+}
+.head-cont{
+	padding-top: 11px;
+	padding-bottom:18px;
+	padding-right:10px;
+	padding-left:10px;
+	font-size: 14px;
+}
+.head-item{
+	padding-top:12px;
+	padding-bottom:9px;
+}
+.navbar{
+	padding:0;
+	color:black;
+}
+.nav-link{
+	padding:0;
+}
+.nav-item{
+	border-bottom:3px solid white;
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+.nav-item:hover{
+ border-bottom: 3px solid #FF874F;
+  padding-top:0;
+  padding-bottom:0;
+}
+.navbar-toggler{
+	margin:15px;
+}
+.active{
+  border-bottom: 3px solid #FF874F;
+} */
+
+/*----------------------*/
+/*---------Main---------*/
+.main{
+	border-top: 1px solid #FF874F;
+  background-image: url("fon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  /* height: 800px; */
+  color:white;
+}
+.textinside{
+  padding-top: 10px;
+  font-family: 'Montserrat-Regular';
+font-style: normal;
+line-height: normal;
+font-size: 16px;
+
+}
+.main-name{
+  margin-top: 120px;
+  color:white;
+ font-family: 'Montserrat-Regular';
+ font-style: 'SemiBold';
+ /* font-style: normal; */
+ font-weight: bold;
+ font-size: 36px;
+ line-height: 44px;
+}
+.cardblocks{
+  padding-top: 160px;
+}
+.text{
+  color:white;
+	font-family: 'Montserrat-Regular';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+}
+.try{
+  font-family: 'Ubuntu-Bold';
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 72px;
+color: #D5D5E1;
+}
+.otstup{
+  min-width: 40px;
+  margin-right: 10px;
+}
+.costil{
+
+  min-height:122px;
+}
+.costil1{
+    padding: 15px;
+align-items:center;
+  background: #F2F2F7;
+box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.22);
+border-radius: 10px;
+padding-left: 10px;
+}
+/*кнопки*/
+.listOfFeatures{
+	width: 70%;
+	margin: 25px auto;
+	//border: 2px solid #FF0;
+
+}
+
+.listOfFeatures ul li{
+	margin: 10px 0;
+	line-height: 20px;
+}
+
+.prod .col-12{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.prod ul li{
+	text-align: center;
+	display: inline-block;
+	margin: 0 5px;
+	padding: 2px 10px;
+	border-radius: 50px 50px 50px 50px;
+	box-shadow: 1px 2px 10px rgba(186, 186, 186, 0.9);
+	transition: 0.2s all ease-in-out;
+}
+
+.list ul li:hover{
+	background-color: #ff963a;
+	color: #fff;
+	transition: 0.2s all ease-in-out;
+}
+
+.list{
+	margin: 25px 0;
+}
+
+.variant img{
+	height: 240px;
+}
+
+.tab-pane{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.nav{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.nav-item{
+	margin: 3px;
+	font-size: 15px;
+  box-shadow: 0px 4px 10px rgba(193, 50, 50, 0.55);
+border-radius: 45px;
+	transition: 0.2s all ease-in-out;
+
+}
+
+.nav-item a{
+	color: #000;
+}
+
+.nav-item:hover, .nav-item a:hover{
+	background: linear-gradient(to right, #FF7122 10%, #FF3465 90%);
+	color: #fff;
+	transition: 0.2s all ease-in-out;
+}
+
+.nav-link.active.show{
+	background: linear-gradient(to right, #FF7122 10%, #FF3465 90%);
+	border-radius: 50px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background: linear-gradient(to right, #FF7122 10%, #FF3465 90%);
+}
+
+.nav-pills .nav-link {
+    border-radius: 50px !important;
+}
+
+#pills-scotch img, #pills-shelftoker img {
+	padding: 5px;
+	margin: 5px;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 1px 2px 10px rgba(186, 186, 186, 0.9);
+}
