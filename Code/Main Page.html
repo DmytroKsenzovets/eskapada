@@ -10,9 +10,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="mainPage.css">
     <title>Main page</title>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   </head>
 
   <body>
+    <iframe src='_header.html' class = ".iframe-full-height" id='iframe'  frameborder="0" width="100%"></iframe>
+        <script>
+           $('.iframe-full-height').on('load', function(){
+             this.style.height=this.contentDocument.body.scrollHeight +'px';
+         });
+       </script>
+   
 
     <link rel="import" href="header.html">
       <!--<div class="container-fluid header">
