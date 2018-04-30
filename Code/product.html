@@ -14,7 +14,39 @@
 </head>
 <body>
 
-	<link rel="import" href="header.html">
+	<script>
+		function includeHTML() {
+		var z, i, elmnt, file, xhttp;
+		/*loop through a collection of all HTML elements:*/
+		z = document.getElementsByTagName("*");
+		for (i = 0; i < z.length; i++) {
+			elmnt = z[i];
+			/*search for elements with a certain atrribute:*/
+			file = elmnt.getAttribute("importPath");
+			if (file) {
+				/*make an HTTP request using the attribute value as the file name:*/
+				xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4) {
+						if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+						if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+						/*remove the attribute, and call this function once more:*/
+						elmnt.removeAttribute("importPath");
+						includeHTML();
+					}
+				}
+				xhttp.open("GET", file, true);
+				xhttp.send();
+				/*exit the function:*/
+				return;
+			}
+		}
+	}
+	</script>
+
+	<div class="kek" importPath="header.html">
+		olololol
+	</div>
 
 	<div class="main">
 		<div class="header">
@@ -74,7 +106,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 
 		<div class="goods">
@@ -82,7 +114,7 @@
 				<div class="row">
 					<div class="col-12">
 							<div id="layout">
-							
+
 							</div>
 						</div>
 					</div>
@@ -109,7 +141,7 @@
 						  </li>
 						  <!--packages-->
 						  <li class="nav-item">
-						    <a class="nav-link" id="pills-packages-tab" data-toggle="pill" href="#pills-packages" role="tab" aria-controls="pills-packages" aria-selected="false">Бумажные пакеты и коробки</a> 
+						    <a class="nav-link" id="pills-packages-tab" data-toggle="pill" href="#pills-packages" role="tab" aria-controls="pills-packages" aria-selected="false">Бумажные пакеты и коробки</a>
 						   <!--shelftoker-->
 						  <li class="nav-item">
 						    <a class="nav-link" id="pills-shelftoker-tab" data-toggle="pill" href="#pills-shelftoker" role="tab" aria-controls="pills-shelftoker" aria-selected="false">Шелфтокеры</a>
@@ -118,7 +150,7 @@
 						  <li class="nav-item">
 						    <a class="nav-link" id="pills-price-tab" data-toggle="pill" href="#pills-price" role="tab" aria-controls="pills-price" aria-selected="false">Некхенгеры и ценники</a>
 						  </li>
-						
+
 						  <!--packagesPolim-->
 						  <li class="nav-item">
 						    <a class="nav-link" id="pills-packagesPolim-tab" data-toggle="pill" href="#pills-packagesPolim" role="tab" aria-controls="packagesPolim-sticker" aria-selected="false">Пакеты полиэтиленовые</a>
@@ -135,7 +167,7 @@
 						  <li class="nav-item">
 						    <a class="nav-link" id="pills-garlands-tab" data-toggle="pill" href="#pills-garlands" role="tab" aria-controls="garlands-sticker" aria-selected="false">Флажки и гирлянды</a>
 						  </li>
-						  
+
 						  <!--calendars-->
 						  <li class="nav-item">
 						    <a class="nav-link" id="pills-calendars-tab" data-toggle="pill" href="#pills-calendars" role="tab" aria-controls="calendars-sticker" aria-selected="false">Календари</a>
@@ -147,7 +179,7 @@
 						</ul>
 
 
-						
+
 
 
 						<div class="tab-content" id="pills-tabContent">
@@ -256,7 +288,7 @@
 						  	<img src="img/packagesPolim/packet-27.jpg">
 						  	<img src="img/packagesPolim/packet-28.jpg">
 						  </div>
-						
+
 		<!--done-->				<!--folders-->
 						  <div class="tab-pane fade" id="pills-folders" role="tabpanel" aria-labelledby="pills-folders-tab">
 						  	<img src="img/folders/folder-notebook-01.jpg">
@@ -295,7 +327,7 @@
 						  	<img src="img/garlands/flag-12.jpg">
 						  	<img src="img/garlands/flag-13.jpg">
 						  </div>
-		
+
 		<!--done-->				<!--calendars-->
 						  <div class="tab-pane fade" id="pills-calendars" role="tabpanel" aria-labelledby="pills-calendars-tab">
 						  	<img src="img/calendars/calendar-07.jpg">
@@ -309,7 +341,9 @@
 	</div>
 </div>
 
-
+<script>
+	includeHTML();
+</script>
 
 
 
