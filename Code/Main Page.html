@@ -8,290 +8,283 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="css/Main Page.css">
+    <link rel="stylesheet" href="comp/comp.css">
     <title>Main page</title>
-
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <iframe src='_header.html' class = ".iframe-full-height" id='iframe'  frameborder="0" width="100%"></iframe>
-        <script>
-           $('.iframe-full-height').on('load', function(){
-             this.style.height=this.contentDocument.body.scrollHeight +'px';
-         });
-       </script>
-   
+    <!-- Header is READY -->
+    <script>
+  		function includeHTML() {
+  		var z, i, elmnt, file, xhttp;
+  		/*loop through a collection of all HTML elements:*/
+  		z = document.getElementsByTagName("*");
+  		for (i = 0; i < z.length; i++) {
+  			elmnt = z[i];
+  			/*search for elements with a certain atrribute:*/
+  			file = elmnt.getAttribute("importPath");
+  			if (file) {
+  				/*make an HTTP request using the attribute value as the file name:*/
+  				xhttp = new XMLHttpRequest();
+  				xhttp.onreadystatechange = function() {
+  					if (this.readyState == 4) {
+  						if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+  						if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+  						/*remove the attribute, and call this function once more:*/
+  						elmnt.removeAttribute("importPath");
+  						includeHTML();
+  					}
+  				}
+  				xhttp.open("GET", file, true);
+  				xhttp.send();
+  				/*exit the function:*/
+  				return;
+  			}
+  		}
+  	}
+  	</script>
+  	<div class="header" importPath="comp/header.html">
+  	</div>
 
-    <link rel="import" href="header.html">
-      <!--<div class="container-fluid header">
-        <div div class="container head-cont">
-          <div class="row">
-            <div class="col-md-3 col-sm-10 logo">
-              <img src="img/Лого.png" alt="">
-                </div>
-                  <div class=" d-flex flex-column justify-content-center align-items-md-end align-items-sm-start col-md-6 col-sm-10">
-                    <span>Украина, Г.Киев,</span>
-                    <span>Днепровская Набережная, 26ж</span>
-                  </div>
-                  <div class=" d-flex flex-column justify-content-center align-items-md-end align-items-sm-start col-md-3 col-sm-10">
-                    <span>Тел./Факс:(044)593-93-76</span>
-                    <span>Моб.Тел.:(067)404-78-40</span>
-                  </div>
-                </div>
-          </div>
+    <!-- Main is READY -->
+    <div class="container-fluid main">
+      <div class="container main-text text-center">
+        <div class="main-name">
+          Рекламно-полиграфическая компания
         </div>
-
-        <nav class="container navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-                  <div class="collapse navbar-collapse" id="navbarsExample10">
-                      <ul class="navbar-nav container-fluid  justify-content-between menu-list">
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">ГЛАВНАЯ</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">РЕКЛАМНАЯ ПОЛИГРАФИЯ</a>
-                          </li>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">РЕКЛАМНЫЕ КОНСТРУКЦИИ</a>
-                          </li>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">ДИЗАЙН</a>
-                          </li>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">КЛИЕНТЫ</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#">КОНТАКТЫ</a>
-                          </li>
-                      </ul>
-                  </div>
-        </nav>
-      </div>-->
-
-      <div class="container-fluid main">
-        <div class="container-fluid short-info vidContain">
-          <div class="vid">
-            <video autoplay muted loop id="video">
-              <source src="vid/polygraphy.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="container" style="z-index:1">
-            <div class="info-text text-center">
-                <div class="main-name"><h3>Рекламно-полиграфическая компания</h3></div>
-                <div class="main-details">
-                  На протяжении 12-ти лет мы помогаем клиентам продвигать<br />
-                  и расширять свой бизнес с помощью наших услуг
-                </div>
-            </div>
-          </div>
-          <div class="container">
-              <div class="row card-blocks">
-                <div class="col-md-4 costil">
-                  <div class="d-flex flex-column align-items-center info-card">
-                      <div>
-                          <img src="img/иконка опыт.png" class="img-fluid icons"style="height:50px;" alt="medal">
-                      </div>
-                      <div>
-                          Опыт работы
-                      </div>
-                      <div class="border-top text-center py-3 mt-3">
-                          Компания ескапада арт работает с 2006-го года. Мы имеем опыт работы сотрудничества с ведущими марками на рынке Украины.
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-4 costil">
-                  <div class="d-flex flex-column align-items-center info-card">
-                      <div>
-                          <img src="img/иконка сроки.png" class="img-fluid icons" style="height:50px;"alt="medal">
-                      </div>
-                      <div>
-                          Сдача в оговоренные сроки
-                      </div>
-                      <div class="border-top text-center py-3 mt-3">
-                          Печать осуществляется на собственном оборудовании, что дает возможность выполнять заказы клиента в установленные сроки.
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-4 costil">
-                  <div class="d-flex flex-column align-items-center info-card">
-                      <div>
-                          <img src="img/иконка сотрудники.png" class="img-fluid icons"style="height:50px;" alt="medal">
-                      </div>
-                      <div>
-                          Ответсвенные сотрудники
-                      </div>
-                      <div class="border-top text-center py-3 mt-3">
-                          Отобранный персонал, пониающий важность и ответсвенность работы. Контроль качества на каджом этапе производства.
-                      </div>
-                  </div>
-                </div>
-              </div>
-          </div>
+        <div class="main-details">На протяжении 12-ти лет мы помогаем клиентам продвигать<br />
+          и расширять свой бизнес с помощью наших услуг
         </div>
       </div>
-
-      <div class="container-fluid clients">
-        <div class="col-12 text-center">
-            Наши клиенты
-        </div>
-
-        <div class="container-fluid">
-          <div class="container">
-            <div class="row justify-content-between" id="clients-picts-1">
-              <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center">
-                <img src="img/Pepsico.png" alt="">
+      <div class="container main-cards">
+        <div class="row">
+          <div class="col-md-4 costil">
+            <div class="d-flex flex-column align-items-center info-card">
+              <div>
+                <img src="img/Main-img/иконка опыт.png" class="img-fluid icons"style="height:50px;" alt="medal">
               </div>
-              <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center">
-                <img src="img/unilever.png" alt="">
+              <div class="py-2">
+                <b>Опыт работы</b>
               </div>
-              <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center">
-                <img src="img/Schwarzkopf.png" alt="">
-              </div>
-              <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center">
-                <img src="img/BDF.png" alt="">
-              </div>
-            </div>
-            <div class="row justify-content-between" id="clients-picts-2">
-              <div class="col-md-3 col-sm-123 d-flex justify-content-center align-items-center">
-                <img src="img/Kimberly-Clark.png" alt="">
-              </div>
-              <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center">
-                <img src="img/Johnson.png" alt="">
-              </div>
-              <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center">
-                <img src="img/Reckitt.png" alt="">
-              </div>
-              <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center">
-                <img src="img/Henkel.png" alt="">
+              <div class="text-center py-2">
+                Компания ескапада арт работает с 2006-го года. Мы имеем опыт работы сотрудничества с ведущими марками на рынке Украины.
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-center">
-            <button type="button" class="btn button" id="clients-btn">Показать больше</button>
+          <div class="col-md-4 costil">
+            <div class="d-flex flex-column align-items-center info-card">
+              <div>
+                <img src="img/Main-img/иконка сроки.png" class="img-fluid icons" style="height:50px;"alt="medal">
+              </div>
+              <div class="py-2">
+                <b>Сдача в оговоренные сроки</b>
+              </div>
+              <div class="text-center py-2">
+                Печать осуществляется на собственном оборудовании, что дает возможность выполнять заказы клиента в установленные сроки.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 costil">
+            <div class="d-flex flex-column align-items-center info-card">
+              <div>
+                <img src="img/Main-img/иконка сотрудники.png" class="img-fluid icons"style="height:50px;" alt="medal">
+              </div>
+              <div class="py-2">
+                <b>Ответсвенные сотрудники</b>
+              </div>
+              <div class="text-center py-2">
+                Отобранный персонал, пониающий важность и ответсвенность работы. Контроль качества на каджом этапе производства.
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid border-top services">
-          <div class="col-12 text-center services-text">
-              <p>Мы предлагаем комплекс услуг</p>
-          </div>
-
-          <div class="container bg-white design">
-              <div class="row">
-                  <div class="col-md-5 col-sm-12">
-                    <img class="img-fluid" src="img/design.png">
-                  </div>
-                  <div class="col-md-7 col-sm-12 d-flex flex-column justify-content-between align-items-start design-list">
-                    <h4>Дизайн</h4>
-                    <ul class="list mb-auto">
-                        <li>разработка идеи и дизайн рекламно-полиграфической продукции;</li>
-                        <li>создание индивидуального стиля продукции клиента путем применения нестандартных технологических реений;</li>
-                        <li>адаптация макетов клиента для рынка Украины, включая профессиональныйперевод и проверку текстовых блоков корректором;</li>
-                    </ul>
-                    <button type="button" class="btn button">Подробнее</button>
-                  </div>
-              </div>
-          </div>
-
-          <div class="container bg-white polygraphy">
-              <div class="row">
-                  <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-between align-items-start">
-                    <h4>Рекламная полиграфия</h4>
-                    <ul class="list mb-auto">
-                        <li>изготовление продукции способом офсетной печати еа бумаге, картоне, ПВХ-материалах;</li>
-                        <li>изготовление продукции способом широкоформатной цифровой печати на бумаге, баннерной ткани, сете и самоклеющейся пленке;</li>
-                        <li>изготовление способом флексографической печати на самоклеющейся пленке и бумане наклеек, этикеток, стикеров;</li>
-                        <li>оперативное изготовление способом цифровой печати коротких тиражей рекламно-полиграфической продукции.</li>
-                    </ul>
-                    <button type="button" class="btn button">Подробнее</button>
-                  </div>
-                  <div class="col-md-6 col-sm-12">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <img src="img/catalog.png" class="realy" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <img src="img/U.png" class="realy" alt="">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <img src="img/book.png" class="realy" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <img src="img/nutrilon.png" class="realy" alt="">
-                      </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="container bg-white constructions">
-              <div class="row">
-                  <div class="col-md-5 col-sm-12">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <img src="img/clear.png" class="realy" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <img src="img/domestis.png" class="realy" alt="">
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <img src="img/axe.png" class="realy" alt="">
-                      </div>
-                      <div class="col-md-6">
-                        <img src="img/стойка.png" class="realy" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-7 col-sm-12 d-flex flex-column justify-content-between align-items-start">
-                    <h4>Рекламные конструкции</h4>
-                    <ul class="list mb-auto">
-                        <li>производство напольных, наполочных и прикассовых рекламно-информационных конструкций из металического прутка, профильных материалов и ДСП (дисплеи, холдеры, тестеры, диспенсеры и т.д.);</li>
-                        <li>производство напольных и подвесных рекламно-информационных конструкций из ПВХ-материалов, картона и гофрокартона (ростовые фигуры, объемные муляжи упаковок, торцевые стелажные стопперы, палетные конструкции).</li>
-                    </ul>
-                    <button type="button" class="btn  button">Подробнее</button>
-                  </div>
-              </div>
-          </div>
-
+    <!-- Clients is READY -->
+    <div class="container-fluid clients">
+      <div class="text-center">
+        Наши клиенты
       </div>
-
-      <footer class="container-fluid">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-3 col-sm-12 d-flex flex-column justify-content-center">
-                      <div class="footer-color">О компании</div>
-                      <div class="footer-color">Клиенты</div>
-                      <div class="footer-color">Контакты</div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 d-flex flex-column justify-content-center">
-                      <div class="footer-color">Рекламная полиграфия</div>
-                      <div class="footer-color">Рекламные конструкции</div>
-                      <div class="footer-color">Дизайн</div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 d-flex flex-column align-items-md-end">
-                      <div class="footer-color">Украина, Г.Киев,</div>
-                      <div class="footer-color">Днепровская Набережная, 26ж</div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 d-flex flex-column align-items-md-end">
-                      <div class="footer-color">Тел./Факс:(044)593-93-76</div>
-                      <div class="footer-color">Моб.Тел.:(067)404-78-40</div>
-                  </div>
-              </div>
+      <div class="container">
+        <div class="row justify-content-between" id="clients-picts-1">
+          <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center clients-pict">
+            <img src="img/Main-img/Pepsico.png" alt="">
           </div>
-      </footer>
+          <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center clients-pict">
+            <img src="img/Main-img/unilever.png" alt="">
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center clients-pict">
+            <img src="img/Main-img/Schwarzkopf.png" alt="">
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center clients-pict">
+            <img src="img/Main-img/Beiersdorf.png" alt="">
+          </div>
+        </div>
+        <div class="row justify-content-between" id="clients-picts-2">
+          <div class="col-md-3 col-sm-123 d-flex justify-content-center align-items-center clients-pict">
+            <img src="img/Main-img/Kimberly-Clark.png" alt="">
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center clients-pict">
+            <img src="img/Main-img/Johnson&Johnson.png" alt="">
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center clients-pict">
+            <img src="img/Main-img/Reckitt Benckiser.png" alt="">
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center clients-pict">
+            <img src="img/Main-img/Henkel.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn button" id="clients-btn">Показать больше</button>
+      </div>
+    </div>
+
+    <!-- Design is READY -->
+    <a name="Design"></a>
+    <div class="container-fluid design">
+      <div class="col-12 text-center services-text">
+        <p><b>Мы предлагаем полный комплекс сферы услуг в сфере<br />дизайна, рекламно-полиграфической продукции и<br />рекламно-информационных конструкций</b></p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-between order-md-2 design-content design-list">
+            <div class="services-sphere">ДИЗАЙН</div>
+            <ul class="list mb-auto">
+              <li>Создание индивидуального стиля продукции клиента с применением нестандартных технологических решений</li>
+              <li>Разработка идеи и дизайн рекламно-полиграфической продукции;</li>
+              <li>Верстка и макетирование, допечатная подготовка макетов, подбор материала рекламно-информационных конструкций;</li>
+              <li>Адаптация макетов клиента для рынка Украины, включая профессиональныйперевод и проверку текстовых блоков;</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-12 design-img order-md-1 design-content">
+            <img class="img-fluid" src="img/Main-img/design.png" id="design-pict">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Polygraphy is READY -->
+    <div class="container-fluid polygraphy">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12 d-flex flex-column justify-content-between">
+            <div class="services-sphere">
+              ПОЛИГРАФИЯ
+            </div>
+            <ul class="list mb-auto">
+              <li>Офсетная печать на бумаге, картоне, ПВХ-материалах;</li>
+              <li>Широкоформатная цифровая печать на бумаге, баннерной ткани, сетке, самоклеющейся пленке;</li>
+              <li>Флексографическая печать на самоклеющейся пленке и бумаге наклеек, этикеток, стикеров;</li>
+              <li>Оперативное изготовление способом цифровой печати коротких тиражей рекламно-полиграфической продукции.</li>
+            </ul>
+            <button type="button" class="btn button mb-auto">Подробнее</button>
+          </div>
+          <div class="col-md-5 col-sm-12 polygraphy-img">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/Main-img/Diademine.png" class="realy" alt="">
+              </div>
+              <div class="col-md-6">
+                <img src="img/Main-img/Paprica.png" class="realy" alt="">
+              </div>
+            </div>
+            <div class="row" id="fifth-pict">
+              <div>
+                <img src="img/Main-img/Neckhanger.png" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/Main-img/Book.png" class="realy" alt="">
+              </div>
+              <div class="col-md-6">
+                <img src="img/Main-img/Sandorik.png" class="realy" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Constructions are ... -->
+    <div class="container-fluid  constructions">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12 d-flex flex-column justify-content-between order-md-2 polygraphy-content">
+            <div class="services-sphere">
+              КОНСТРУКЦИИ
+            </div>
+            <ul class="list mb-auto">
+              <li>производство напольных, наполочных и прикассовых рекламно-информационных конструкций из металического прутка, профильных материалов и ДСП (дисплеи, холдеры, тестеры, диспенсеры и т.д.);</li>
+              <li>производство напольных и подвесных рекламно-информационных конструкций из ПВХ-материалов, картона и гофрокартона (ростовые фигуры, объемные муляжи упаковок, торцевые стелажные стопперы, палетные конструкции).</li>
+            </ul>
+            <button type="button" class="btn  button">Подробнее</button>
+          </div>
+          <div class="col-md-5 col-sm-12 order-md-1 constructions-img">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/Main-img/Clear.png" class="img-adaptive" alt="">
+              </div>
+              <div class="col-md-6">
+                <img src="img/Main-img/Timotei.png" class="img-adaptive" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img/Main-img/Beseda.png" class="img-adaptive" alt="">
+              </div>
+              <div class="col-md-4">
+                <img src="img/Main-img/Agusha.png" class="img-adaptive" alt="">
+              </div>
+              <div class="col-md-4">
+                <img src="img/Main-img/Rack.png" class="img-adaptive" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer is READY -->
+    <script>
+  		function includeHTML() {
+  		var z, i, elmnt, file, xhttp;
+  		/*loop through a collection of all HTML elements:*/
+  		z = document.getElementsByTagName("*");
+  		for (i = 0; i < z.length; i++) {
+  			elmnt = z[i];
+  			/*search for elements with a certain atrribute:*/
+  			file = elmnt.getAttribute("importPath");
+  			if (file) {
+  				/*make an HTTP request using the attribute value as the file name:*/
+  				xhttp = new XMLHttpRequest();
+  				xhttp.onreadystatechange = function() {
+  					if (this.readyState == 4) {
+  						if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+  						if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+  						/*remove the attribute, and call this function once more:*/
+  						elmnt.removeAttribute("importPath");
+  						includeHTML();
+  					}
+  				}
+  				xhttp.open("GET", file, true);
+  				xhttp.send();
+  				/*exit the function:*/
+  				return;
+  			}
+  		}
+  	}
+  	</script>
+  	<div class="footer" importPath="comp/footer.html">
+  	</div>
+
+    <script>
+    	includeHTML();
+    </script>
+
   </body>
 </html>

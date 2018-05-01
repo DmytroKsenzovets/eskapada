@@ -1,0 +1,46 @@
+/*----------------------*/
+/*--------header--------*/
+.header{
+	background-color: white;
+}
+.head-cont{
+	padding-top: 11px;
+	padding-bottom:18px;
+	padding-right:10px;
+	padding-left:10px;
+	font-size: 14px;
+}
+.head-item{
+	padding-top:12px;
+	padding-bottom:9px;
+}
+.navbar{
+	padding:0;
+	color:black;
+}
+.nav-link{
+	padding:0;
+}
+.nav-item{
+	border-bottom:3px solid white;
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+.nav-item:hover{
+  padding-top:0;
+  padding-bottom:0;
+}
+.navbar-toggler{
+	margin:15px;
+}
+.active{
+  border-bottom: 3px solid #FF874F;
+}
+
+/*----------------------*/
+/*--------footer--------*/
+footer{
+	background-color: #383745;
+	padding-top:20px;
+	padding-bottom: 20px;
+}

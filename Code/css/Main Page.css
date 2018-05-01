@@ -33,7 +33,7 @@
 }
 .list{
 	padding-left:0;
-	list-style-image: url("../Main-img/list-marker.png");
+	list-style-image: url("../img/Main-img/list-marker.png");
 }
 .list li{
 	padding-top: 11px;
@@ -46,7 +46,7 @@
 /*---------Main---------*/
 .main{
 	border-top: 1px solid #FF874F;
-  background: url("../Main-img/Main2.png") no-repeat;
+  background: url("../img/Main-img/Main2.png") no-repeat;
 	background-position: center top;
 	min-height: 100%;
 }
@@ -84,7 +84,7 @@
 /*----------------------*/
 /*--------clients-------*/
 .clients{
-  background-image: url("../Main-img/clients_bg.png");
+  background-image: url("../img/Main-img/clients_bg.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
   background-position: bottom;
@@ -173,14 +173,6 @@
 }
 .polygraphy-content{
 	padding-left:50px;
-}
-
-/*----------------------*/
-/*----------Map---------*/
-.map{
-	background-image: url("img/Map.png");
-	max-width: 100%;
-	height: 100%;
 }
 
 /*----------------------*/
