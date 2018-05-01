@@ -14,23 +14,23 @@
 	padding-top:12px;
 	padding-bottom:9px;
 }
-.navbar{
-	padding:0;
-	color:black;
-}
-.nav-link{
+
+.navbar-header{
 	padding:0;
 }
-.nav-item{
+.link-header{
+	padding:0;
+}
+.nav-item-header{
 	border-bottom:3px solid white;
 	padding-bottom: 4px;
 	padding-top: 4px;
 }
-.nav-item:hover{
+.nav-item-header:hover{
   padding-top:0;
   padding-bottom:0;
 }
-.navbar-toggler{
+.navbar-toggler-header{
 	margin:15px;
 }
 .active{

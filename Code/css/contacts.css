@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+		font-family: 'Montserrat-SemiBold';
+		src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+*{
+	font-family: "Montserrat-Regular";
+}
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+.container{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.contacts{
+	background: url("../img/contacts/contacts_bg.png") no-repeat;
+	background-position: center top;
+	min-height: 100%;
+	padding-top:141px;
+	padding-bottom: 161px;
+	font-size:36px;
+}
+.contact-text{
+	font-family: 'Montserrat-SemiBold';
+}
+#location{
+	list-style-image: url("../img/contacts/location.png");
+}
+#contact-person{
+	list-style-image: url("../img/contacts/person.png");
+}
+#phone-numbers{
+	list-style-image: url("../img/contacts/phone.png");
+}

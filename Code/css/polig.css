@@ -16,34 +16,15 @@
 	font-family: "Montserrat-Regular";
 	color:black;
 }
-body{
-	background-color: #F2F2F7;
-}
-/* .container-fluid{
+
+.container-fluid{
 	padding-left: 0;
 	padding-right: 0;
-}
-.button{
-	width:165px;
-	height:40px;
-	background-color:#FF874F;
-	color:white;
-}
-.button:hover{
-	background-color: #ff5100;
 }
 .container{
 	padding-left: 0;
 	padding-right: 0;
 }
-.list{
-	padding-left:0;
-}
-
-.list li{
-	padding-top: 10px;
-	padding-bottom:7px;
-} */
 
 /*----------------------*/
 /*---------Main---------*/
@@ -51,9 +32,8 @@ body{
 	border-top: 1px solid #FF874F;
   background-image: url("../img/polygraphy-img/fon.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  /* height: 800px; */
+  background-position: center top;
+	min-height: 100%;
   color:white;
 }
 .textinside{
@@ -163,7 +143,7 @@ padding-left: 10px;
 	justify-content: center;
 	margin: 0 auto;
 }
-.nav-item{
+.nav-item-poly{
 	margin: 3px;
 	font-size: 15px;
   box-shadow: 0px 4px 10px rgba(193, 50, 50, 0.55);
@@ -172,27 +152,27 @@ border-radius: 45px;
 
 }
 
-.nav-item a{
+.nav-item-poly a{
 	color: #000;
 }
 
-.nav-item:hover, .nav-item a:hover{
+.nav-item-poly:hover, .nav-item-poly a:hover{
 	background: linear-gradient(to right, #FF7122 10%, #FF3465 90%);
 	color: #fff;
 	transition: 0.2s all ease-in-out;
 }
 
-.nav-link.active.show{
+.nav-link-poly.active.show{
 	background: linear-gradient(to right, #FF7122 10%, #FF3465 90%);
 	border-radius: 50px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link-poly.active, .nav-pills .show>.nav-link-poly {
     color: #fff;
     background: linear-gradient(to right, #FF7122 10%, #FF3465 90%);
 }
 
-.nav-pills .nav-link {
+.nav-pills .nav-link-poly {
     border-radius: 50px !important;
 }
 
