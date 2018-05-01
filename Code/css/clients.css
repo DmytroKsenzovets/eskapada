@@ -138,4 +138,5 @@
 .client:hover img{
 	width: 115px;
 	position:top;
+	transform: translateY(-90px);
 }
