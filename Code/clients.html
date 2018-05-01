@@ -1,138 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Product</title>
-	<link rel="stylesheet" type="text/css" href="clients.css">
+  <meta charset="UTF-8">
+  <title>Клиенты</title>
+  <link rel="stylesheet" type="text/css" href="css/clients.css">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- In component includes.html START -->
 
-  
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- In component END -->
+
 </head>
 <body>
 
-  <iframe src='_header.html' class = ".iframe-full-height" id='iframe'  frameborder="0" width="100%"></iframe>
-      <script>
-        $('.iframe-full-height').on('load', function(){
-            this.style.height=this.contentDocument.body.scrollHeight +'px';
-        });
-      </script>
-  <!--
-  <div class="container-fluid">
-    <div div class="container head-cont">
-            <div class="row">
-                <div class="col-md-3 col-sm-10 logo">
-                    <img src="img/Лого.png" alt="">
-                </div>
-                <div class=" d-flex flex-column justify-content-center align-items-md-end align-items-sm-start col-md-6 col-sm-10">
-                    <span>Украина, Г.Киев,</span>
-                    <span>Днепровская Набережная, 26ж</span>
-                </div>
-                <div class=" d-flex flex-column justify-content-center align-items-md-end align-items-sm-start col-md-3 col-sm-10">
-                    <span>Тел./Факс:(044)593-93-76</span>
-                    <span>Моб.Тел.:(067)404-78-40</span>
-                </div>
+  <!-- include header.html -->
+      <div class="container">
+        <div class="row listofClients">
+
+          <div class="client col-md-3 col-sm-6 years-3">
+              <img src="img/jonson.png" class="client-img">
+          </div>
+
+          <div class="client col-md-3 col-sm-6 years-12">
+              <img src="img/Unilever.png">
+          </div>
+
+          <div class="client col-md-3 col-sm-6 years-2">
+              <img src="img/Beierrsdorf.png">
+          </div>
+
+          <div class="client col-md-3 col-sm-6 years-10">
+              <img src="img/Schwarzkopf.png">
+          </div>
+
+          <div class="client col-md-3 col-sm-6 years-10">
+              <img src="img/Colgate.png">
+          </div>
+
+          <div class="client col-md-3 col-sm-6 years-5">
+              <img src="img/Kimberly-Clark.png">
+          </div>
+
+          <div class="client col-md-3 col-sm-6 years-4">
+              <img src="img/Reckitt Benckiser.png">
+          </div>
+
+          <div class="client col-md-3 col-sm-6 years-5">
+              <img src="img/Henkel.png">
+          </div>
+
+          <div class="client col-md-3 col-sm-6 years-8">
+              <img src="img/Pepsico.png">
+          </div>
+
+          <div class="client col-md-3 col-sm-6 years-9">
+              <img src="img/Unilever food.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-4">
+              <img src="img/Kernel.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-4">
+              <img src="img/carlsbergukraine_rgb.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-1">
+              <img src="img/Bayadera.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-6">
+              <img src="img/ppb.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-6">
+              <img src="img/Radomyshl_Logo.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-1">
+              <img src="img/Anheuser-Busch-InBev-logo.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-2">
+              <img src="img/Sperco.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-1">
+              <img src="img/Teva_logo.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-7">
+              <img src="img/Client-Danone.png">
+            </div>
+
+          <div class="client col-md-3 col-sm-6 years-9">
+              <img src="img/Bunge_Limited_Logo.png">
             </div>
         </div>
+      </div>
 
-    <nav class="container navbar navbar-expand-lg navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-              <div class="collapse navbar-collapse" id="navbarsExample10">
-                  <ul class="navbar-nav container-fluid justify-content-between menu-list">
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">О КОМПАНИИ</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">РЕКЛАМНАЯ ПОЛИГРАФИЯ</a>
-                      </li>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">РЕКЛАМНЫЕ КОНСТРУКЦИИ</a>
-                      </li>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">ДИЗАЙН</a>
-                      </li>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">КЛИЕНТЫ</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">КОНТАКТЫ</a>
-                      </li>
-                  </ul>
-              </div>
-    </nav>
-  </div>-->
-	 <div class="container-fluid">
-		<div class="gradient">
-		  <div class="container-fluid">
-		  	<div class="main">
-					<div class="container">
-						<div class="clients">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="listofClients">
-										<img src="img/Unilever.png">
-										<img src="img/Unilever.png">
-										<img src="img/Beierrsdorf.png">
-										<img src="img/Schwarzkopf.png">
-										<img src="img/Colgate.png">
-										<img src="img/Kimberly-Clark.png">
-										<img src="img/Reckitt Benckiser.png">
-										<img src="img/Henkel.png">
-										<img src="img/Pepsico.png">
-										<img src="img/Unilever food.png">
-										<img src="img/Kernel.png">
-										<img src="img/carlsbergukraine_rgb.png">
-										<img src="img/Bayadera.png">
-										<img src="img/ppb.png">
-										<img src="img/Radomyshl_Logo.png">
-										<img src="img/Anheuser-Busch-InBev-logo.png">
-										<img src="img/Sperco.png">
-										<img src="img/Teva_logo.png">
-										<img src="img/Client-Danone.png">
-										<img src="img/Bunge_Limited_Logo.png">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-		  </div>
-	 </div>
- </div>
-    <footer class="container-fluid">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-3 col-sm-12 d-flex flex-column justify-content-center">
-                      <div class="footer-color">О компании</div>
-                      <div class="footer-color">Клиенты</div>
-                      <div class="footer-color">Контакты</div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 d-flex flex-column justify-content-center">
-                      <div class="footer-color">Рекламная полиграфия</div>
-                      <div class="footer-color">Рекламные конструкции</div>
-                      <div class="footer-color">Дизайн</div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 d-flex flex-column align-items-md-end">
-                      <div class="footer-color">Украина, Г.Киев,</div>
-                      <div class="footer-color">Днепровская Набережная, 26ж</div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 d-flex flex-column align-items-md-end">
-                      <div class="footer-color">Тел./Факс:(044)593-93-76</div>
-                      <div class="footer-color">Моб.Тел.:(067)404-78-40</div>
-                  </div>
-              </div>
-          </div>
-      </footer>
-  </body>
+  <!-- In component footer.html START -->
+  <footer class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="client col-md-3 col-sm-6 col-sm-12 d-flex flex-column justify-content-center">
+          <div class="footer-color">О компании</div>
+          <div class="footer-color">Клиенты</div>
+          <div class="footer-color">Контакты</div>
+        </div>
+        <div class="client col-md-3 col-sm-6 col-sm-12 d-flex flex-column justify-content-center">
+          <div class="footer-color">Рекламная полиграфия</div>
+          <div class="footer-color">Рекламные конструкции</div>
+          <div class="footer-color">Дизайн</div>
+        </div>
+        <div class="client col-md-3 col-sm-6 col-sm-12 d-flex flex-column align-items-md-end">
+          <div class="footer-color">Украина, Г.Киев,</div>
+          <div class="footer-color">Днепровская Набережная, 26ж</div>
+        </div>
+        <div class="client col-md-3 col-sm-6 col-sm-12 d-flex flex-column align-items-md-end">
+          <div class="footer-color">Тел./Факс:(044)593-93-76</div>
+          <div class="footer-color">Моб.Тел.:(067)404-78-40</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- In component footer.html END -->
+</body>
