@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Montserrat-Regular';
-  src: url(fonts/Montserrat-Regular.ttf);
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
 @font-face {
 		font-family: 'Montserrat-ExtraBold';
-		src: url(fonts/Montserrat-Bold.ttf);
+		src: url(../fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
@@ -46,50 +46,10 @@ body{
 } */
 
 /*----------------------*/
-/*--------header--------*/
- /* .header{
-	background-color: white;
-}
-.head-cont{
-	padding-top: 11px;
-	padding-bottom:18px;
-	padding-right:10px;
-	padding-left:10px;
-	font-size: 14px;
-}
-.head-item{
-	padding-top:12px;
-	padding-bottom:9px;
-}
-.navbar{
-	padding:0;
-	color:black;
-}
-.nav-link{
-	padding:0;
-}
-.nav-item{
-	border-bottom:3px solid white;
-	padding-bottom: 4px;
-	padding-top: 4px;
-}
-.nav-item:hover{
- border-bottom: 3px solid #FF874F;
-  padding-top:0;
-  padding-bottom:0;
-}
-.navbar-toggler{
-	margin:15px;
-}
-.active{
-  border-bottom: 3px solid #FF874F;
-} */
-
-/*----------------------*/
 /*---------Main---------*/
 .main{
 	border-top: 1px solid #FF874F;
-  background-image: url("fon.png");
+  background-image: url("../img/polygraphy-img/fon.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;

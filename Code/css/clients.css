@@ -21,6 +21,9 @@
 .clients{
 	border-top: 1px solid #FF874F;
 	background-image: url("../img/clients/clients_bg.png");
+	background-repeat: no-repeat;
+  background-position: center top;
+	min-height: 100%;
 	padding-top:141px;
 	padding-bottom: 160px;
 }
