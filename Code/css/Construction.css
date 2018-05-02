@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url(../fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+		font-family: 'Montserrat-ExtraBold';
+		src: url(../fonts/Montserrat-Bold.ttf);
+  }
+@font-face {
+    		font-family: 'Montserrat-SemiBold';
+    		src: url(../fonts/Montserrat-SemiBold.ttf);
+
+}
+*{
+	font-family: 'Montserrat-Regular';:
+}
+.container-fluid{
+
+	padding-left: 0;
+	padding-right: 0;
+}
+.button{
+	width:165px;
+	height:40px;
+background-color:#FF874F;
+	color:white;
+}
+.button:hover{
+	background-color: #ff5100;
+}
+.container{
+
+	padding-left: 0;
+	padding-right: 0;
+}
+.list{
+	padding-left:0;
+}
+.list li{
+	padding-top: 10px;
+	padding-bottom:7px;
+}
+
+/*----------------------*/
+/*--------header--------*/
+.header{
+	background-color: white;
+}
+.head-cont{
+	padding-top: 11px;
+	padding-bottom:18px;
+	padding-right:10px;
+	padding-left:10px;
+	font-size: 14px;
+}
+.head-item{
+	padding-top:12px;
+	padding-bottom:9px;
+}
+.navbar{
+	padding:0;
+	color:black;
+}
+.nav-link{
+	padding:0;
+}
+.nav-item{
+	border-bottom:3px solid white;
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+.nav-item:hover{
+  padding-top:0;
+  padding-bottom:0;
+}
+.navbar-toggler{
+	margin:15px;
+}
+.active{
+  border-bottom: 3px solid #FF874F;
+}
+
+/*----------------------*/
+/*---------Main---------*/
+.main{
+  background-image: url("../img/construction-img/background.png");
+  min-height:500px;
+  width:100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.main-text{
+	padding-top: 141px;
+	padding-bottom: 298px;
+}
+.main-name{
+	color:white;
+	font-family: 'Montserrat-SemiBold';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+}
+.main-cards{
+	margin-top: -163px;
+}
+.costil{
+	padding:10px;
+}
+.catalog-costil{
+  padding-left: 100px;
+  padding-right:
+}
+
+.catalog-costil img:last-child{
+  text-align: center;
+}
+
+.content{
+	padding:7px;
+	padding-top: 10px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.py-2{
+  max-width:458;
+}
+.txt{
+   margin-bottom: 10px;
+font-family: 'Montserrat-Regular';
+	font-size: 16px;
+}
+.number{
+  margin-right: 10px;
+  margin-left: 19px;
+  font-family: 'Ubuntu-Bold';
+  	font-size: 72px;
+    color:#D5D5E1;
+}
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+       float: right; /* Выравнивание по правому краю  */
+       margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+      }
+      /* Button */
+      .button-more{
+      	width:537px;
+      	height:40px;
+      	border-radius: 20px;
+      	border:2px solid rgba(193, 50, 50, 0.55);
+      	background:linear-gradient(to right, #FF7B1C , #FF3465);
+      	color:white;
+      }
+      .button-more:hover{
+      	background:linear-gradient(to right, #f26704 , #f6003b);
+      }
+      .button-more:active{
+      	background:#f6003b;
+      }
+
+.btn{
+  margin-top: 100px;
+}
