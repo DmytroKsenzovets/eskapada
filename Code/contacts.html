@@ -15,36 +15,52 @@
     <title>Контакты</title>
   </head>
   <body>
-    <script>
-      function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /*loop through a collection of all HTML elements:*/
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("importPath");
-        if (file) {
-          /*make an HTTP request using the attribute value as the file name:*/
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /*remove the attribute, and call this function once more:*/
-              elmnt.removeAttribute("importPath");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /*exit the function:*/
-          return;
-        }
-      }
-    }
-    </script>
-    <div class="header" importPath="comp/header.html">
+    <div class="container-fluid header">
+      <div class="container">
+        <div class="row head-cont">
+          <div class="head-item col-md-3">
+            <a href="../Main Page.html"><img src="img/Main-img/eskapada_logo.png" alt=""></a>
+          </div>
+          <div class="head-item d-flex flex-column justify-content-center align-items-md-end col-md-7">
+            <span>Украина, г.Киев,</span>
+            <span>Днепровская набережная, 26ж, оф.11</span>
+          </div>
+          <div class="head-item d-flex flex-column justify-content-center align-items-md-end col-md-2">
+            <span>+38(044)593-93-76</span>
+            <span>+38(067)404-78-40</span>
+          </div>
+        </div>
+      </div>
+      <nav class="container navbar navbar-header navbar-expand-lg navbar-light">
+      <button class="navbar-toggler navbar-toggler-header" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          <div class="collapse navbar-collapse" id="navbarsExample10">
+            <ul class="navbar-nav container-fluid  justify-content-between menu-list">
+              <li class="nav-item nav-item-header">
+                <a class="nav-link link-header text-dark" href="Main page.html">ГЛАВНАЯ</a>
+              </li>
+              <li class="nav-item nav-item-header">
+                <a class="nav-link link-header text-dark" href="#Design">ДИЗАЙН</a>
+              </li>
+              </li>
+              <li class="nav-item nav-item-header ">
+                <a class="nav-link link-header text-dark" href="Construction.html">РЕКЛАМНЫЕ КОНСТРУКЦИИ</a>
+                  </li>
+              </li>
+              <li class="nav-item nav-item-header">
+                <a class="nav-link link-header text-dark" href="polygrafy.html">РЕКЛАМНАЯ ПОЛИГРАФИЯ</a>
+              </li>
+              </li>
+              <li class="nav-item nav-item-header">
+                <a class="nav-link link-header text-dark" href="../clients.html">КЛИЕНТЫ</a>
+              </li>
+              <li class="nav-item nav-item-header active">
+                <a class="nav-link link-header text-dark" href="contacts.html">КОНТАКТЫ</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
     </div>
 
     <div class="container-fluid contacts">
