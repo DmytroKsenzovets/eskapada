@@ -3,15 +3,12 @@
   <head>
     <meta charset="utf-8">
     <!-- In component includes.html START -->
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- In component END -->
-
     <link rel="stylesheet" href="css/contacts.css">
-    <link rel="stylesheet" href="comp/comp.css">
-
+    <link rel="stylesheet" href="css/header-footer.css">
     <title>Контакты</title>
   </head>
   <body>
@@ -19,7 +16,7 @@
       <div class="container">
         <div class="row head-cont">
           <div class="head-item col-md-3">
-            <a href="../Main Page.html"><img src="img/Main-img/eskapada_logo.png" alt=""></a>
+            <a href="index.html"><img src="img/Main-img/eskapada_logo.png" alt=""></a>
           </div>
           <div class="head-item d-flex flex-column justify-content-center align-items-md-end col-md-7">
             <span>Украина, г.Киев,</span>
@@ -38,10 +35,10 @@
           <div class="collapse navbar-collapse" id="navbarsExample10">
             <ul class="navbar-nav container-fluid  justify-content-between menu-list">
               <li class="nav-item nav-item-header">
-                <a class="nav-link link-header text-dark" href="Main page.html">ГЛАВНАЯ</a>
+                <a class="nav-link link-header text-dark" href="index.html">ГЛАВНАЯ</a>
               </li>
               <li class="nav-item nav-item-header">
-                <a class="nav-link link-header text-dark" href="#Design">ДИЗАЙН</a>
+                <a class="nav-link link-header text-dark" href="index.html#Design">ДИЗАЙН</a>
               </li>
               </li>
               <li class="nav-item nav-item-header ">
@@ -49,7 +46,7 @@
                   </li>
               </li>
               <li class="nav-item nav-item-header">
-                <a class="nav-link link-header text-dark" href="polygrafy.html">РЕКЛАМНАЯ ПОЛИГРАФИЯ</a>
+                <a class="nav-link link-header text-dark" href="polygraphy.html">РЕКЛАМНАЯ ПОЛИГРАФИЯ</a>
               </li>
               </li>
               <li class="nav-item nav-item-header">
@@ -63,24 +60,31 @@
       </nav>
     </div>
 
-    <div class="container-fluid contacts">
+    <div class="container-fluid contacts-title">
       <div class="container text-center">
-        <div class="text-white contact-text">
+        <div class="text-white title-text">
           Хотите с нами связаться?
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <ul id="location">
-        <li>Украина, г.Киев<br />Днепровская набережная,<br />26ж, офис 11</li>
-      </ul>
-      <ul id="contact-person">
-        <li>Директор: Григоренко С.П.<br />+38(050)381-69-50<br />grigorenko@eskapada.com.ua</li>
-      </ul>
-      <ul id="phone-numbers">
-        <li>+38(044)593-93-76<br />+38(044)593-09-76</li>
-      </ul>
+    <div class="container contacts">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/contacts/eskapada_logo.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-6">
+          <ul id="location">
+            <li>Украина, г.Киев<br />Днепровская набережная,<br />26ж, офис 11</li>
+          </ul>
+          <ul id="contact-person">
+            <li>Директор: Григоренко С.П.<br />+38(050)381-69-50<br />grigorenko@eskapada.com.ua</li>
+          </ul>
+          <ul id="phone-numbers">
+            <li>+38(044)593-93-76<br />+38(044)593-09-76</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="container-fluid">
@@ -89,10 +93,10 @@
     <script>
       function myMap() {
 
-        var pos = new google.maps.LatLng(50.447297, 30.455342)
+        var pos = new google.maps.LatLng(50.394127, 30.613287)
 
         gMap = new google.maps.Map(document.getElementById('gMap'), {
-          zoom: 17,
+          zoom: 15.6,
           center: pos
         });
 
@@ -104,8 +108,8 @@
           title: 'DKS Group'
         });
 
-        var htmlContent = '<h3>Eskapada ART</h3>'+
-        'Contact us?';
+        var htmlContent = '<h4>Ескапада АРТ</h4>'+
+        'Some text';
 
         var infowindow = new google.maps.InfoWindow({
           content: htmlContent
@@ -128,14 +132,14 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-2 col-sm-12 d-flex flex-column justify-content-center align-items-md-start align-items-center footer-column">
-                      <a class="text-white" href="Main page.html">Главная</a>
-                      <a class="text-white"  href="clients.html">Клиенты</a>
-                      <a class="text-white" href="contacts.html">Контакты</a>
+                      <a class="text-white" href="index.html">Главная</a>
+                      <a class="text-white" href="index.html#Design">Дизайн</a>
+                      <a class="text-white" href="clients.html">Клиенты</a>
                   </div>
                   <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-md-start align-items-center footer-column">
-                      <a class="text-white" href="polygrafy.html">Рекламная полиграфия</a>
                       <a class="text-white" href="constructions.html">Рекламные конструкции</a>
-                      <a class="text-white">Дизайн</a>
+                      <a class="text-white" href="polygraphy.html">Рекламная полиграфия</a>
+                      <a class="text-white" href="contacts.html">Контакты</a>
                   </div>
                   <div class="col-md-4 col-sm-12 d-flex flex-column align-items-md-end align-items-center pt-3 pt-md-0 pt-sm-3">
                       <div class="text-white">Украина, Г.Киев,</div>

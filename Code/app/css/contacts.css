@@ -17,8 +17,8 @@
 	padding-left: 0;
 	padding-right: 0;
 }
-
-.contacts{
+/*------Contacts ------*/
+.contacts-title{
 	background: url("../img/contacts/contacts_bg.png") no-repeat;
 	background-position: center top;
 	min-height: 100%;
@@ -26,8 +26,13 @@
 	padding-bottom: 161px;
 	font-size:36px;
 }
-.contact-text{
+.title-text{
 	font-family: 'Montserrat-SemiBold';
+}
+.contacts{
+  padding-left: 97px;
+	padding-top:46px;
+	padding-bottom: 46px;
 }
 #location{
 	list-style-image: url("../img/contacts/location.png");

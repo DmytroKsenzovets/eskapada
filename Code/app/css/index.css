@@ -3,7 +3,7 @@
   src: url("../fonts/Montserrat-Regular.ttf");
 }
 @font-face {
-		font-family: 'Montserrat-ExtraBold';
+		font-family: 'Montserrat-Bold';
 		src: url("../fonts/Montserrat-Bold.ttf");
 }
 *{
@@ -17,8 +17,8 @@
 	width:165px;
 	height:40px;
 	border-radius: 20px;
-	border:2px solid rgba(193, 50, 50, 0.55);
 	background:linear-gradient(to right, #FF7B1C , #FF3465);
+	box-shadow: 0 4px 14px rgba(193, 50, 50, 0.55);
 	color:white;
 }
 .button:hover{
@@ -46,8 +46,8 @@
 /*---------Main---------*/
 .main{
 	border-top: 1px solid #FF874F;
-  background: url("../img/Main-img/Main2.png") no-repeat;
-	background-position: center top;
+  background: url("../img/Main-img/main_bg.png") no-repeat;
+	background-position: center;
 	min-height: 100%;
 }
 .main-text{
@@ -56,9 +56,7 @@
 }
 .main-name{
 	color:white;
-	font-family: 'Montserrat-ExtraBold';
-	font-style: normal;
-	font-weight: bold;
+	font-family: 'Montserrat-Bold';
 	font-size: 36px;
 }
 .main-details{
@@ -114,8 +112,8 @@
 }
 .services-sphere{
 	font-size: 36px;
-	font-family: 'Montserrat-ExtraBold';
-	color:#D5D5E1;
+	font-family: 'Montserrat-Bold';
+	color: #FF6A3B;
 	padding-left: 21px;
 }
 
@@ -173,12 +171,4 @@
 }
 .polygraphy-content{
 	padding-left:50px;
-}
-
-/*----------------------*/
-/*--------footer--------*/
-footer{
-	background-color: #383745;
-	padding-top:20px;
-	padding-bottom: 20px;
 }
