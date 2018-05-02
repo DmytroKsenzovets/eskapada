@@ -64,7 +64,7 @@ font-size: 16px;
 	font-weight: bold;
 	font-size: 36px;
 }
-.try{
+.bignumber{
   font-family: 'Ubuntu-Bold';
 font-style: normal;
 font-weight: bold;
@@ -72,15 +72,15 @@ line-height: normal;
 font-size: 72px;
 color: #D5D5E1;
 }
-.otstup{
+.indetationInText{
   min-width: 40px;
   margin-right: 10px;
 }
-.costil{
+.cartblocks{
 
   min-height:122px;
 }
-.costil1{
+.cartblocksInside{
     padding: 15px;
 align-items:center;
   background: #F2F2F7;
