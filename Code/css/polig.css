@@ -3,13 +3,13 @@
   src: url(../fonts/Montserrat-Regular.ttf);
 }
 @font-face {
-		font-family: 'Montserrat-ExtraBold';
-		src: url(../fonts/Montserrat-Bold.ttf);
+		font-family: 'Montserrat-SemiBold';
+		src: url(../fonts/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
 		font-family: 'Ubuntu-Bold';
-		src: url(fonts/Ubuntu-Bold.ttf);
+		src: url(../fonts/Ubuntu-Bold.ttf);
 }
 
 *{
@@ -47,7 +47,7 @@ font-size: 16px;
 .main-name{
   margin-top: 120px;
   color:white;
- font-family: 'Montserrat-Regular';
+ font-family: 'Montserrat-SemiBold';
  font-style: 'SemiBold';
  /* font-style: normal; */
  font-weight: bold;
@@ -59,7 +59,7 @@ font-size: 16px;
 }
 .text{
   color:white;
-	font-family: 'Montserrat-Regular';
+	font-family: 'Montserrat-SemiBold';
 	font-style: normal;
 	font-weight: bold;
 	font-size: 36px;
