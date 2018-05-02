@@ -22,16 +22,16 @@
           animation: google.maps.Animation.DROP,
           title: 'DKS Group'
         });
-        
+
         var htmlContent = '<h3>DKS Group</h3>'+
         'Some text';
-        
+
         var infowindow = new google.maps.InfoWindow({
           content: htmlContent
         });
-        
+
         infowindow.open(gMap, gMarker);
-          
+
         gMarker.addListener('click', function(){
           infowindow.open(gMap, gMarker);
         });
