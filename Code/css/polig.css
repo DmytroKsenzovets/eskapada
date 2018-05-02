@@ -30,7 +30,7 @@
 /*---------Main---------*/
 .main{
 	border-top: 1px solid #FF874F;
-  background-image: url("../img/polygraphy-img/fon.png");
+  background-image: url("../img/polygraphy-img/fonForPolygraphy.png");
   background-repeat: no-repeat;
   background-position: center top;
 	min-height: 100%;
@@ -42,10 +42,10 @@
 font-style: normal;
 line-height: normal;
 font-size: 16px;
-
+align-content:flex-start;
 }
 .main-name{
-  margin-top: 120px;
+  margin-top: 150px;
   color:white;
  font-family: 'Montserrat-SemiBold';
  font-weight: bold;
@@ -70,10 +70,13 @@ color: #D5D5E1;
 }
 .indetationInText{
   min-width: 40px;
-  margin-right: 10px;
+  margin-right: 22px;
+  margin-left: 32px;
+  margin-top: 10px;
+  margin-bottom: 9px;
 }
 .cartblocks{
-
+margin-bottom: 30px;
   min-height:122px;
 }
 .cartblocksInside{
