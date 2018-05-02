@@ -135,13 +135,12 @@
 	transition: width 0.7s;
 }
 
-/*.client:hover img{
+.client:hover img{
 	width: 115px;
 	position:top;
-	transform: translateY(-90px);
+/*	transform: translateY(-90px);*/
 }
-*/
-.client:hover img.img-Johnson{
+/*.client:hover img.img-Johnson{
 	width: 115px;
 	position:top;
 	transform: translateY(-88px);
@@ -241,4 +240,4 @@
 	position:top;
 	transform: translateY(-93px);
 	}
-
+/*
