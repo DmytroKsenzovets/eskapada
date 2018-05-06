@@ -48,6 +48,7 @@ background-color:#FF874F;
 /*----------------------*/
 /*---------Main---------*/
 .main{
+  border-top: 1px solid #FF874F;
   background-image: url("../img/construction-img/background.png");
   min-height:500px;
   width:100%;
@@ -74,7 +75,6 @@ background-color:#FF874F;
 }
 .catalog-costil{
   padding-left: 100px;
-  padding-right:
 }
 
 .catalog-costil img:last-child{
@@ -92,6 +92,10 @@ background-color:#FF874F;
 }
 .py-2{
   max-width:458;
+}
+
+.lay{
+  margin: 50px;
 }
 .txt{
    margin-bottom: 10px;
@@ -138,5 +142,5 @@ font-family: 'Montserrat-Regular';
       }
 
 .btn{
-  margin-top: 100px;
+  margin-bottom: 20px;
 }

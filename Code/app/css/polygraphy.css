@@ -33,6 +33,8 @@
   background-image: url("../img/polygraphy-img/fonForPolygraphy.png");
   background-repeat: no-repeat;
   background-position: center top;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
 	min-height: 100%;
   color:white;
 }
@@ -57,6 +59,7 @@ font-size: 16px;
 .cardblocks{
   padding-top: 160px;
 }
+
 .text{
   color:white;
 	font-family: 'Montserrat-SemiBold';
@@ -98,9 +101,10 @@ padding-left: 10px;
 .listOfFeatures{
 	width: 70%;
 	margin: 25px auto;
-	//border: 2px solid #FF0;
 
 }
+
+
 
 .listOfFeatures ul li{
 	margin: 10px 0;
@@ -145,6 +149,9 @@ padding-left: 10px;
 .list{
 	margin: 25px 0;
 }
+.variant{
+	margin: 50px;
+}
 
 .variant img{
 	height: 240px;
@@ -153,8 +160,12 @@ padding-left: 10px;
 .tab-pane{
 	text-align: center;
 	margin: 0 auto;
+	border: none;
 }
 
+.tab-pane.fade.active.show{
+	border: none;
+}
 .nav{
 	text-align: center;
 	display: -webkit-box;
@@ -184,15 +195,19 @@ padding-left: 10px;
 	color: #000;
 }
 
+.nav-link.nav-link-poly.active{
+	border: none;
+}
+
 .nav-item-poly:hover, .nav-item-poly a:hover{
 	background: -webkit-gradient(linear, left top, right top, color-stop(10%, #FF7122), color-stop(90%, #FF3465));
 	background: -webkit-linear-gradient(left, #FF7122 10%, #FF3465 90%);
 	background: -o-linear-gradient(left, #FF7122 10%, #FF3465 90%);
 	background: linear-gradient(to right, #FF7122 10%, #FF3465 90%);
 	color: #fff;
-	-webkit-transition: 0.2s all ease-in-out;
-	-o-transition: 0.2s all ease-in-out;
-	transition: 0.2s all ease-in-out;
+	-webkit-transition: 0.2s background ease-in-out;
+	-o-transition: 0.2s background ease-in-out;
+	transition: 0.2s background ease-in-out;
 }
 
 .nav-link-poly.active.show{
