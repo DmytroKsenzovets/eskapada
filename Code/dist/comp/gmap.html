@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <div id="gMap" style="width:100%;height:400px;"></div>
+
+    <script>
+      function myMap() {
+
+        var pos = new google.maps.LatLng(50.394127, 30.613287)
+
+        gMap = new google.maps.Map(document.getElementById('gMap'), {
+          zoom: 15.6,
+          center: pos
+        });
+
+        gMarker = new google.maps.Marker({
+          position: pos,
+          map: gMap,
+          //draggable: true,
+          animation: google.maps.Animation.DROP,
+          title: 'DKS Group'
+        });
+
+        var htmlContent = '<h3>DKS Group</h3>'+
+        'Some text';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: htmlContent
+        });
+
+        infowindow.open(gMap, gMarker);
+
+        gMarker.addListener('click', function(){
+          infowindow.open(gMap, gMarker);
+        });
+
+        gMarker.setMap(gMap);
+      }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWV92DK5SeH5bvAQjyNfN-OLTdS6kXPRo&callback=myMap"></script>
+
+  </body>
+
+</html>
