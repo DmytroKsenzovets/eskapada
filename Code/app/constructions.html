@@ -9,6 +9,17 @@
     <!-- In component END -->
     <link rel="stylesheet" href="css/construction.css">
     <link rel="stylesheet" href="css/header-footer.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="js/jquery.mousewheel.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+
+
     <title>Конструкции</title>
   </head>
   <body>
@@ -112,40 +123,54 @@
       <div class="container d-flex justify-content-center ">
         <div class="row catalog-costil">
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/11.png">
+
+<a class="fancybox" rel="gallery1" href="img/construction-img/11.png">
+            <img src="img/construction-img/11.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/12.png">
+<a class="fancybox" rel="gallery1" href="img/construction-img/12.png">
+            <img src="img/construction-img/12.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/13.png">
+<a class="fancybox" rel="gallery1" href="img/construction-img/13.png">
+            <img src="img/construction-img/13.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/14.png">
+<a class="fancybox" rel="gallery1" href="img/construction-img/14.png">
+            <img src="img/construction-img/14.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/15.png">
+<a class="fancybox" rel="gallery1" href="img/construction-img/15.png">
+            <img src="img/construction-img/15.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/21.png">
+<a class="fancybox" rel="gallery1" href="img/construction-img/21.png">
+            <img src="img/construction-img/21.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
+<a class="fancybox" rel="gallery1" href="img/construction-img/22.png">
             <img src="img/construction-img/22.png">
           </div>
           <div class="col-md-3  col-sm-6">
-            <img src="img/construction-img/23.png">
+
+<a class="fancybox" rel="gallery1" href="img/construction-img/23.png">
+            <img src="img/construction-img/23.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/24.png">
+<a class="fancybox" rel="gallery1" href="img/construction-img/24.png">
+            <img src="img/construction-img/24.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/25.png">
+<a class="fancybox" rel="gallery1" href="img/construction-img/25.png">
+            <img src="img/construction-img/25.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/31.png">
+<a class="fancybox" rel="gallery1" href="img/construction-img/31.png">
+            <img src="img/construction-img/31.png"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <img src="img/construction-img/32.png">
+<a class="fancybox" rel="gallery1" href="img/construction-img/32.png">
+            <img src="img/construction-img/32.png"></a>
           </div>
         </div>
       </div>
@@ -177,4 +202,12 @@
           </div>
       </footer>
   </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+  $(".fancybox").fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none'
+  });
+});
+  </script>>
 </html>
