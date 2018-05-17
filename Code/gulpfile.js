@@ -1,7 +1,6 @@
 var gulp = require("gulp");
 var sass= require("gulp-sass");
 var watch = require("gulp-watch");
-
 var browserSync = require("browser-sync");
 var imgmin = require('gulp-imagemin');
 var imgpng = require('imagemin-pngquant');

@@ -49,7 +49,7 @@ background-color:#FF874F;
 /*---------Main---------*/
 .main{
   border-top: 1px solid #FF874F;
-  background-image: url("../img/construction-img/background.png");
+  background-image: url("../img/Main-img/constr.png");
   min-height:500px;
   width:100%;
   -webkit-background-size: 100% 100%;

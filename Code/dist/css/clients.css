@@ -20,7 +20,7 @@
 
 .clients{
 	border-top: 1px solid #FF874F;
-	background-image: url("../img/clients/clients_bg.png");
+	background-image: url("../img/Main-img/clients.png");
 	background-repeat: no-repeat;
   background-position: center top;
 	min-height: 100%;
@@ -41,6 +41,7 @@
 }
 
 .listofClients {
+	margin-top: 5px; 
 	background-color: #fff;
 }
 
@@ -68,7 +69,7 @@
 	transition: align-items 1.4s, -webkit-box-align 1.4s, -webkit-align-items 1.4s, -ms-flex-align 1.4s;
 }
 
-.client:hover {
+.client:hover, .client.active {
 	-webkit-box-align: left;
 	-webkit-align-items: left;
 	    -ms-flex-align: left;
@@ -95,7 +96,7 @@
 	transition: opacity 1.4s;
 }
 
-.client:hover:after{
+.client:hover:after, .client.active:after{
 	opacity:1;
 }
 
@@ -159,7 +160,7 @@
 	transition:  0.4s ease-in-out;
 }
 
-.client:hover img{
+.client:hover img, .client.active img{
 	width: 115px;
 	-webkit-transition:  0.4s ease-in-out;
 	-o-transition:  0.4s ease-in-out;
