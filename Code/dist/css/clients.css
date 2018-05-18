@@ -165,7 +165,9 @@
 	-webkit-transition:  0.4s ease-in-out;
 	-o-transition:  0.4s ease-in-out;
 	transition:  0.4s ease-in-out;
-	-webkit-transform: translateY(-90px) !important;
-	    -ms-transform: translateY(-90px) !important;
-	        transform: translateY(-90px) !important;
+/*	-webkit-transform: translateY(-90px) !important;*/
+/*	    -ms-transform: translateY(-90px) !important;*/
+/*	        transform: translateY(-90px) !important;*/
+	position: absolute;
+	top: 0;
 }
