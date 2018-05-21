@@ -32,33 +32,37 @@
           </div>
         </div>
       </div>
-      <nav class="container navbar navbar-header navbar-expand-lg navbar-light">
-       <button class="navbar-toggler navbar-toggler-header" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav container-fluid  justify-content-between menu-list">
-              <a class="nav-link link-header text-dark" href="index.html">
-                <li class="nav-item nav-item-header">ГЛАВНАЯ</li>
-              </a>
-              <a class="nav-link link-header text-dark" href="polygraphy.html">
-                <li class="nav-item nav-item-header">РЕКЛАМНАЯ ПОЛИГРАФИЯ</li>
-              </a>
-              <a class="nav-link link-header text-dark" href="constructions.html">
-                <li class="nav-item nav-item-header">РЕКЛАМНЫЕ КОНСТРУКЦИИ</li>
-              </a>
-              <a class="nav-link link-header text-dark" href="index.html#Design">
-                <li class="nav-item nav-item-header">ДИЗАЙН</li>
-              </a>
-              <a class="nav-link link-header text-dark" href="clients.html">
-                <li class="nav-item nav-item-header">КЛИЕНТЫ</li>
-              </a>
-              <a class="nav-link link-header text-dark" href="contacts.html">
-                <li class="nav-item nav-item-header active">КОНТАКТЫ</li>
-              </a>
-            </ul>
-        </div>
-      </nav>
+    </div>
+    <div class="container-fluid" id="navbar">
+      <div class="container">
+        <nav class="container navbar navbar-header navbar-expand-lg navbar-light">
+          <button class="navbar-toggler navbar-toggler-header" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav container-fluid  justify-content-between menu-list">
+                  <a class="nav-link link-header text-dark" href="index.html">
+                    <li class="nav-item nav-item-header">ГЛАВНАЯ</li>
+                  </a>
+                  <a class="nav-link link-header text-dark" href="polygraphy.html">
+                    <li class="nav-item nav-item-header">РЕКЛАМНАЯ ПОЛИГРАФИЯ</li>
+                  </a>
+                  <a class="nav-link link-header text-dark" href="constructions.html">
+                    <li class="nav-item nav-item-header">РЕКЛАМНЫЕ КОНСТРУКЦИИ</li>
+                  </a>
+                  <a class="nav-link link-header text-dark" href="index.html#Design">
+                    <li class="nav-item nav-item-header">ДИЗАЙН</li>
+                  </a>
+                  <a class="nav-link link-header text-dark" href="clients.html">
+                    <li class="nav-item nav-item-header">КЛИЕНТЫ</li>
+                  </a>
+                  <a class="nav-link link-header text-dark" href="contacts.html">
+                    <li class="nav-item nav-item-header active">КОНТАКТЫ</li>
+                  </a>
+                </ul>
+            </div>
+        </nav>
+      </div>
     </div>
 
     <div class="container-fluid contacts-title">
@@ -154,4 +158,27 @@
       </footer>
 
   </body>
+  <!-- Скрипт для навбара хедера -->
+ <script>
+   window.onscroll = function() {myFunction()};
+
+   var navbar = document.getElementById("navbar");
+   var sticky = navbar.offsetTop;
+   var navList = document.getElementsByClassName("nav-item-header");
+   function myFunction() {
+     if (window.pageYOffset >= sticky) {
+       navbar.classList.add("sticky")
+       for (var i = 0; i < navList.length; i++) {
+         navList[i].classList.add("nav-item-header-sticky");
+       }
+       navList[5].classList.add("active-sticky");
+     } else {
+       navbar.classList.remove("sticky");
+       for (var i = 0; i < navList.length; i++) {
+         navList[i].classList.remove("nav-item-header-sticky");
+       }
+       navList[5].classList.remove("active-sticky");
+     }
+   }
+ </script>
 </html>

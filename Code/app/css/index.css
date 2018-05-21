@@ -53,7 +53,6 @@
 /*----------------------*/
 /*---------Main---------*/
 .main{
-	border-top: 1px solid #FF874F;
   background: url("../img/Main-img/main_bg.png") no-repeat;
 	background-position: center top;
 	min-height: 100%;

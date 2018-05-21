@@ -15,16 +15,29 @@
 	padding-bottom:9px;
 }
 
-.navbar-header{
-	padding:0;
+#navbar{
+	border-bottom: 1px solid #FF874F;
 }
-.link-header{
+.sticky {
+	z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+	background-color:#FF874F !important;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.navbar-header, .link-header{
 	padding:0;
 }
 .nav-item-header{
 	border-bottom:3px solid white;
 	padding-bottom: 4px;
 	padding-top: 4px;
+}
+.nav-item-header-sticky{
+	color:white !important;
+	border-bottom:3px solid #FF874F;
 }
 .nav-item-header:hover{
   padding-top:0;
@@ -35,6 +48,9 @@
 }
 .active{
   border-bottom: 3px solid #FF874F;
+}
+.active-sticky{
+	border-bottom: 3px solid white;
 }
 
 /*----------------------*/

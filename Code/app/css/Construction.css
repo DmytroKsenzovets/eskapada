@@ -48,7 +48,6 @@ background-color:#FF874F;
 /*----------------------*/
 /*---------Main---------*/
 .main{
-  border-top: 1px solid #FF874F;
   background-image: url("../img/Main-img/constr.png");
   min-height:100%;
   background-repeat: no-repeat;
