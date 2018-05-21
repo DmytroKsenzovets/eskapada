@@ -28,7 +28,7 @@
 }
 .nav-item-header:hover{
   padding-top:0;
-  padding-bottom:0;
+  padding-bottom:8px;
 }
 .navbar-toggler-header{
 	margin:15px;
