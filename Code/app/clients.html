@@ -181,13 +181,14 @@
         </div>
     </footer>
     <!-- Скрипт для навбара хедера -->
+    <!-- Скрипт для навбара хедера -->
    <script>
-     window.onscroll = function() {myFunction()};
-
-     var navbar = document.getElementById("navbar");
-     var sticky = navbar.offsetTop;
-     var navList = document.getElementsByClassName("nav-item-header");
-     function myFunction() {
+   window.onscroll = function() {myFunction()};
+   var navbar = document.getElementById("navbar");
+   var sticky = navbar.offsetTop;
+   var navList = document.getElementsByClassName("nav-item-header");
+   function myFunction() {
+     if(window.innerWidth >= 800 && window.innerHeight >= 600){
        if (window.pageYOffset >= sticky) {
          navbar.classList.add("sticky")
          for (var i = 0; i < navList.length; i++) {
@@ -202,5 +203,6 @@
          navList[4].classList.remove("active-sticky");
        }
      }
+   }
    </script>
 </body>

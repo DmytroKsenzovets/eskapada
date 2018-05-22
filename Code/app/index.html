@@ -277,29 +277,30 @@
             </div>
         </div>
     </footer>
-    
-   <!-- Скрипт для навбара хедера -->
-  <script>
-    window.onscroll = function() {myFunction()};
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    var navList = document.getElementsByClassName("nav-item-header");
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        for (var i = 0; i < navList.length; i++) {
-          navList[i].classList.add("nav-item-header-sticky");
-        }
-        navList[0].classList.add("active-sticky");
-      } else {
-        navbar.classList.remove("sticky");
-        for (var i = 0; i < navList.length; i++) {
-          navList[i].classList.remove("nav-item-header-sticky");
-        }
-        navList[0].classList.remove("active-sticky");
-      }
-    }
-  </script>
+   <!-- Скрипт для навбара хедера -->
+   <script>
+   window.onscroll = function() {myFunction()};
+   var navbar = document.getElementById("navbar");
+   var sticky = navbar.offsetTop;
+   var navList = document.getElementsByClassName("nav-item-header");
+   function myFunction() {
+     if(window.innerWidth >= 800 && window.innerHeight >= 600){
+       if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky")
+         for (var i = 0; i < navList.length; i++) {
+           navList[i].classList.add("nav-item-header-sticky");
+         }
+         navList[0].classList.add("active-sticky");
+       } else {
+         navbar.classList.remove("sticky");
+         for (var i = 0; i < navList.length; i++) {
+           navList[i].classList.remove("nav-item-header-sticky");
+         }
+         navList[0].classList.remove("active-sticky");
+       }
+     }
+   }
+   </script>
 </body>
 </html>
