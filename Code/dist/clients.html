@@ -21,43 +21,48 @@
         <div class="head-item col-md-3">
           <a href="index.html"><img src="img/Main-img/eskapada_logo.png" alt=""></a>
         </div>
-        <div class="head-item d-flex flex-column justify-content-center align-items-md-end col-md-7">
+        <div class="head-item d-flex flex-column justify-content-center align-items-md-end col-md-6">
           <span>Украина, 02132, г.Киев,</span>
           <span>ул. Днепровская набережная, д. 26-ж, оф. 11</span>
         </div>
-        <div class="head-item d-flex flex-column justify-content-center align-items-md-end col-md-2">
-          <span>+38(044)593-93-76</span>
-          <span>+38(044)593-09-76</span>
+        <div class="head-item d-flex flex-column justify-content-center align-items-md-end col-md-3">
+          <span>тел./факс: <a href="tel:+38(044)593-93-76">+38(044)593-93-76</a></span>
+          <span>тел./факс: <a href="tel:+38(044)593-09-76">+38(044)593-09-76</a></span>
+          <span>email: office@eskapada.com.ua</span>
         </div>
       </div>
     </div>
-    <nav class="container navbar navbar-header navbar-expand-lg navbar-light">
-    <button class="navbar-toggler navbar-toggler-header" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav container-fluid  justify-content-between menu-list">
-              <li class="nav-item nav-item-header">
-                <a class="nav-link link-header text-dark" href="index.html">ГЛАВНАЯ</a>
-              </li>
-              <li class="nav-item nav-item-header">
-                <a class="nav-link link-header text-dark" href="polygraphy.html">РЕКЛАМНАЯ ПОЛИГРАФИЯ</a>
-              </li>
-              <li class="nav-item nav-item-header ">
-                <a class="nav-link link-header text-dark" href="constructions.html">РЕКЛАМНЫЕ КОНСТРУКЦИИ</a>
-              </li>
-              <li class="nav-item nav-item-header">
-                <a class="nav-link link-header text-dark" href="index.html#Design">ДИЗАЙН</a>
-              </li>
-              <li class="nav-item nav-item-header active">
-                <a class="nav-link link-header text-dark" href="clients.html">КЛИЕНТЫ</a>
-              </li>
-              <li class="nav-item nav-item-header ">
-                <a class="nav-link link-header text-dark" href="contacts.html">КОНТАКТЫ</a>
-              </li>
-            </ul>
-        </div>
-    </nav>
+  </div>
+  <div class="container-fluid" id="navbar">
+    <div class="container">
+      <nav class="container navbar navbar-header navbar-expand-lg navbar-light">
+        <button class="navbar-toggler navbar-toggler-header" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav container-fluid  justify-content-between menu-list">
+                <a class="nav-link link-header text-dark" href="index.html">
+                  <li class="nav-item nav-item-header">ГЛАВНАЯ</li>
+                </a>
+                <a class="nav-link link-header text-dark" href="polygraphy.html">
+                  <li class="nav-item nav-item-header">РЕКЛАМНАЯ ПОЛИГРАФИЯ</li>
+                </a>
+                <a class="nav-link link-header text-dark" href="constructions.html">
+                  <li class="nav-item nav-item-header">РЕКЛАМНЫЕ КОНСТРУКЦИИ</li>
+                </a>
+                <a class="nav-link link-header text-dark" href="index.html#Design">
+                  <li class="nav-item nav-item-header">ДИЗАЙН</li>
+                </a>
+                <a class="nav-link link-header text-dark" href="clients.html">
+                  <li class="nav-item nav-item-header active">КЛИЕНТЫ</li>
+                </a>
+                <a class="nav-link link-header text-dark" href="contacts.html">
+                  <li class="nav-item nav-item-header">КОНТАКТЫ</li>
+                </a>
+              </ul>
+          </div>
+      </nav>
+    </div>
   </div>
 
 
@@ -175,4 +180,29 @@
             </div>
         </div>
     </footer>
+    <!-- Скрипт для навбара хедера -->
+    <!-- Скрипт для навбара хедера -->
+   <script>
+   window.onscroll = function() {myFunction()};
+   var navbar = document.getElementById("navbar");
+   var sticky = navbar.offsetTop;
+   var navList = document.getElementsByClassName("nav-item-header");
+   function myFunction() {
+     if(window.innerWidth >= 800 && window.innerHeight >= 600){
+       if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky")
+         for (var i = 0; i < navList.length; i++) {
+           navList[i].classList.add("nav-item-header-sticky");
+         }
+         navList[4].classList.add("active-sticky");
+       } else {
+         navbar.classList.remove("sticky");
+         for (var i = 0; i < navList.length; i++) {
+           navList[i].classList.remove("nav-item-header-sticky");
+         }
+         navList[4].classList.remove("active-sticky");
+       }
+     }
+   }
+   </script>
 </body>

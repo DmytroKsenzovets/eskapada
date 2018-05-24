@@ -48,13 +48,10 @@ background-color:#FF874F;
 /*----------------------*/
 /*---------Main---------*/
 .main{
-  border-top: 1px solid #FF874F;
   background-image: url("../img/Main-img/constr.png");
-  min-height:500px;
-  width:100%;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  min-height:100%;
   background-repeat: no-repeat;
+	background-position: center top;
 }
 .main-text{
 	padding-top: 141px;

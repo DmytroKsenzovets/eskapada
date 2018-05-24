@@ -19,7 +19,6 @@
 }
 
 .clients{
-	border-top: 1px solid #FF874F;
 	background-image: url("../img/Main-img/clients.png");
 	background-repeat: no-repeat;
   background-position: center top;
@@ -41,7 +40,7 @@
 }
 
 .listofClients {
-	margin-top: 5px; 
+	margin-top: 5px;
 	background-color: #fff;
 }
 

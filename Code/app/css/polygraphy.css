@@ -29,13 +29,10 @@
 /*----------------------*/
 /*---------Main---------*/
 .main{
-	border-top: 1px solid #FF874F;
   background-image: url("../img/Main-img/polygraphy.png");
   background-repeat: no-repeat;
   background-position: center top;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
-	min-height: 100%;
+  min-height: 100%;
   color:white;
 }
 .textinside{

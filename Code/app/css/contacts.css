@@ -19,7 +19,6 @@
 }
 /*------Contacts ------*/
 .contacts-title{
-	border-top: 1px solid #FF874F;
 	background: url("../img/Main-img/cont.png") no-repeat;
 	background-position: center top;
 	min-height: 100%;
